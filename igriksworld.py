@@ -574,7 +574,7 @@ def show_title():
     canvas.delete(ALL)
     canvas.configure(bg="lightblue")
     canvas.create_text(WIDTH/2, HEIGHT/4, text="IGRIK'S WORLD", font=("Helvetica", 48, "bold"), fill="white")
-    canvas.create_text(WIDTH/2, HEIGHT/4 + 48, text="Press Enter or click New Game", font=("Helvetica", 16), fill="white")
+    canvas.create_text(WIDTH/2, HEIGHT/4 + 48, text="", font=("Helvetica", 16), fill="white")
     def button(xc, yc, txt, cmd):
         rect = canvas.create_rectangle(xc-140, yc-28, xc+140, yc+28, fill="#8b8b8b", outline="black", width=4)
         label = canvas.create_text(xc, yc, text=txt, font=("Helvetica", 20, "bold"), fill="white")
@@ -586,7 +586,7 @@ def show_title():
         canvas.tag_bind(rect, "<Button-1>", click); canvas.tag_bind(label, "<Button-1>", click)
     button(WIDTH/2, HEIGHT/2 - 10, "New Game", start_new_game)
     button(WIDTH/2, HEIGHT/2 + 60, "Quit Game", root.destroy)
-    canvas.create_text(WIDTH/2, HEIGHT - 30, text="(Original levels kept) — press Enter to start", fill="white")
+    canvas.create_text(WIDTH/2, HEIGHT - 30, text="Copyright (C) Chucny 2025 All rights reserved.", fill="white")
 
 def start_new_game():
     global state, current_level_index
@@ -881,3 +881,4 @@ def _loop():
 # --- INITIALIZE TITLE ---
 show_title()
 root.mainloop()
+
