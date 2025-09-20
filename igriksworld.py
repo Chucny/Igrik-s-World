@@ -374,11 +374,11 @@ levels.append([
 levels.append([
     make_level([
         "                                ",
-        "     wwwww    w  w    wwwww  w   w  w w   w   w  wwwww  w   w           w  wwwww  wwww  w  w   w  w ",
-        "       w      w  w    w   w  ww  w  ww      w    w   w  w   w           w  w      w  w  w  w w    w ",
-        "       w      wwww    wwwww  w w w  w w      w    w   w  w   w           w  w  ww  w w   w  w w      ",
-        "       w      w  w    w   w  w  ww  w  w     w    wwwww  wwwww   w       w  wwwww  w  w  w  w   w  w ",
-        "                                                                 w                                  ",
+        "     wwwww    w  w    wwwww  w   w  w w    w w   wwwww  w   w           w  wwwww  wwww  w  w w  w ",
+        "       w      w  w    w   w  ww  w  ww      w    w   w  w   w           w  w      w  w  w  ww   w ",
+        "       w      wwww    wwwww  w w w  w w     w    w   w  w   w           w  w  ww  www   w  ww      ",
+        "       w      w  w    w   w  w  ww  w  w    w    wwwww  wwwww   w       w  wwwww  w  w  w  w w  w ",
+        "                                                                w                                  ",
         "                                                                                                    ",
         "                                                                                                    ",
         "swwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
