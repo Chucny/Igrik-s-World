@@ -1,12 +1,4 @@
-# igrik_world.py
-# Igrik's World - Full fixed file
-# - All 12 original levels preserved
-# - Enemy patrol movement fixed (reverse at edge/wall)
-# - Classic stationary red dragon boss on level 12 only
-# - Player can shoot ORANGE fireballs (Shift) only during bossfight
-# - Title screen present; no HUD text shown while playing
-#
-# Run with Python 3.8+ (Tkinter)
+
 
 from tkinter import *
 from time import time
@@ -29,7 +21,7 @@ FRICTION = 3800.0
 JUMP_SPEED = 900
 JUMP_CUTOFF = 0.45
 
-LIVES_START = 8
+LIVES_START = 20
 
 # tile colors (keeps original tile letters)
 TILE_COLORS = {
@@ -70,16 +62,16 @@ levels = []
 # Level 1
 levels.append([
     make_level([
-        "     s          ggg     yyy   f  ",
-        "                                  ",
-        "   ggg        yyy          ggg   ",
-        "                                  ",
-        "           ggg     ccc            ",
-        "                                  ",
-        "     ggg            ggg       mmm ",
         "                                  ",
         "                                  ",
-        "                                  "
+        "                                  ",
+        "                      gg          ",
+        "                    gggggg         ",
+        "                   gggggggg       ",
+        "                       q          ",
+        "s                      q                             g     f",
+        "ggggggggg  gggggg gggggggggggggggg    g  ggg   g     q     q",
+        "qqqqqqqqq  qqqqqq qqqqqqqqqqqqqqqq    q  qqq   q     q     q"
     ]),
     "skyblue",
     False
@@ -88,88 +80,88 @@ levels.append([
 # Level 2
 levels.append([
     make_level([
-        "                             f",
-        "                      oooooooo",
-        "                              ",
-        "                              ",
-        "         yyy   oooooooooooooo ",
-        "                              ",
-        "    gggg        ggg  ccc      ",
-        "                              ",
-        "                              ",
-        "sggg      gggg   mmm  gggggggg"
+        "                                 ",
+        "                                 ",
+        "                                                                            ",
+        "                            gggg                                      ggg    ",
+        "                          gggggggg                                  gggggg   ",
+        "                            w                                         b     ",
+        "                            b                                         w     ",
+        "                            w                  ggg                    b              ",
+        "sggggggg    g      gggggggggggggggggggg        qqq         ggg       ggg        ggggf",
+        "qqqqqqqq    q      qqqqqqqqqqqqqqqqqqqq        qqq         qqq       qqq        qqqqq"
     ]),
-    "lightsteelblue",
+    "skyblue",
     False
 ])
 
 # Level 3
 levels.append([
     make_level([
-        "     g   g    g   g   g     yyy ",
+        "                               ",
         "                                ",
-        "      g       g       g         ",
-        "   ttt                            ",
-        "   g    g    g    g    g        ",
-        "                                ",
-        "                                ",
-        "   ggg  ccc    ggg   mmm  ggg   ",
-        "s                               f",
-        "gggggg                 ggggggggg"
+        "                                 ",
+        "                                                                 gg ",
+        "                     gggg                                      ggggg ",
+        "                   ggggggg                                       b  ",
+        "                     qqq                                         w   ",
+        "                     qqq                             ggg    gggggggg     ggf",
+        "sgggggggg   ggggggggggggggggggggg     ggg    gggg    qqq    qqqqqqqq     qqq",
+        "qqqqqqqqq   qqqqqqqqqqqqqqqqqqqqq     qqq    qqqq    qqq    qqqqqqqq     qqq"
     ]),
-    "lightblue",
+    "skyblue",
     False
 ])
 
 # Level 4
 levels.append([
     make_level([
-        "     s         g   g    yyy f   ",
-        "                                ",
-        "   ggg     ggg  ccc  ggg        ",
-        "                                ",
-        "       g       g       g        ",
-        "                                ",
-        "  g    g    g    g    g         ",
         "                                ",
         "                                ",
-        "ggggggggggggggggg  mmm   ggggggg"
+        "                                ",
+        "                                ",
+        "                          gg    ",
+        "                        ggggg    ",
+        "                          q     ",
+        "                          q                       ggg   ggggf",
+        "ggggggggg   g    ggggggggggggggggg   ggggg   g    qqq   qqqqq",
+        "qqqqqqqqq   q    qqqqqqqqqqqqqqqqq   qqqqq   q    qqq   qqqqq"
     ]),
-    "paleturquoise",
+    "skyblue",
     False
 ])
 
 # Level 5
 levels.append([
     make_level([
-        " s   g  y  g    g  g   c f      ",
-        "                                ",
-        "   g  g   g   g    g    g       ",
-        "                                ",
-        "      g      g       g          ",
-        "                                ",
-        "   ggg   mmm   ggg       ggg    ",
         "                                ",
         "                                ",
-        "ggggggg     ggggg      ggggggggg"
+        "                                                                         ggg",
+        "                          ggg                                          gggggg",
+        "                        gggggg                                           w",
+        "                          b                                              b ",
+        "                          w                                              w",
+        "                          b                       ggggg   ggggg  gggggggggggggggggg   ggggf",
+        "ggggggggg   g    ggggggggggggggggg   ggggg   gg   qqqqq   qqqqq  qqqqqqqqqqqqqqqqqq   qqqqq",
+        "qqqqqqqqq   q    qqqqqqqqqqqqqqqqq   qqqqq   qq   qqqqq   qqqqq  qqqqqqqqqqqqqqqqqq   qqqqq"
     ]),
-    "lightcyan",
+    "skyblue",
     False
 ])
 
 # Level 6
 levels.append([
     make_level([
-        "s     y g     g   t  g      f   ",
         "                                ",
-        "   ggg            ggg           ",
         "                                ",
-        "           g                    ",
-        "         g g g   ccc            ",
-        "       g   g   g                ",
-        "   ggg   mmm     ggg            ",
-        "                                ",
-        "                 ggggggggggggggg"
+        "                                                ",
+        "                                      ggg       ",
+        "                   ggg        gg    gggggg   gg",
+        "                  ggggg     ggggg     b    ggggg  ",
+        "                    q         q       w      q   ",
+        "                    q         q       b      q   ",
+        "sggggggggg  ggggggggggggg    ggg     ggg    ggg     ggggf     ",
+        "qqqqqqqqqq  qqqqqqqqqqqqq    qqq     qqq    qqq     qqqqq      "
     ]),
     "skyblue",
     False
@@ -178,37 +170,37 @@ levels.append([
 # Level 7
 levels.append([
     make_level([
-        "   s  g y g  g    g   g  g   f ",
-        "                                ",
-        "      g     g  c  g     g       ",
-        "                                ",
-        "   g    g    g   t g    g       ",
         "                                ",
         "                                ",
-        "      ggg   yyy   ggg       g   ",
-        "                                ",
-        "gggggggggg    gggggg     ggggggg"
+        "                                                                      ",
+        "                                                                       ggg",
+        "                           gg                     gg                 ggggggg                      ",
+        "                         ggggg                  ggggg                   w                          ",
+        "                           q                      w                     b                         ",
+        "                           q                      b                     w                         ",
+        "gggggggggg    ggggg   gggggggggg    ggggg   gggggggggg    ggggg   gggggggggg    ggggg   gggggggggf",
+        "qqqqqqqqqq    qqqqq   qqqqqqqqqq    qqqqq   qqqqqqqqqq    qqqqq   qqqqqqqqqq    qqqqq   qqqqqqqqqq"
     ]),
-    "lightgoldenrod",
+    "skyblue",
     False
 ])
 
 # Level 8
 levels.append([
     make_level([
-        "s      g   g   y   g     g      ",
         "                                ",
-        "      g    c   g      g         ",
         "                                ",
-        "   ggg   yyy ggg  mmm ggg       ",
         "                                ",
-        "        g    g    g             ",
-        "                                ",
-        "                                                            f",
-        "ggg   ggggg     ggggggggggg   ggg   ggg   ggg   ggg   ggggggg"
+        "                          ggg   ",
+        "                         ggggg   ",
+        "                           w    ",
+        "                           b    ",
+        "                           w    ",
+        "    sggggggggggggggggggggggggggf",
+        "    qqqqqqqqqqqqqqqqqqqqqqqqqqqq"
     ]),
-    "lightsteelblue",
-    False
+    "lightblue",
+    True
 ])
 
 # Level 9
@@ -392,8 +384,6 @@ def draw_igrik(px, py, w, h, tag):
     canvas.create_oval(px - w*0.25, py + h*0.08, px + w*0.25, py + h*0.3, fill="red", tags=tag, outline="")
 
 # --- SPAWN HELPERS ---
-def spawn_enemy(x, y, vx):
-    enemies.append({'x': x, 'y': y, 'vx': vx, 'w': TILE_SIZE*0.9, 'h': TILE_SIZE*0.9})
 
 def spawn_fireball(x, y, vx):
     projectiles.append({'x': x, 'y': y, 'vx': vx, 'r': 8})
@@ -429,15 +419,7 @@ def load_level(index):
     globals()['level_bg'] = level_bg_local
     globals()['has_boss'] = has_boss_local
 
-    # spawn enemies on certain levels (preserve original heuristic)
-    if index in (3, 5, 7, 9):
-        for i in range(6, MAP_W - 6, 8):
-            for r in range(MAP_H-1, -1, -1):
-                if level_map_local[r][i] != ' ':
-                    ey = r*TILE_SIZE + TILE_SIZE/2
-                    spawn_enemy(i*TILE_SIZE + TILE_SIZE/2, ey - TILE_SIZE/2, 60 if (i%16==0) else -60)
-                    break
-
+    
     # spawn player at start
     px, py = find_start(level_map_local)
     player['x'] = px; player['y'] = py; player['vx'] = 0; player['vy'] = 0; player['on_ground'] = False; player['invuln'] = 0
