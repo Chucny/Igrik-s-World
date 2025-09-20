@@ -203,19 +203,19 @@ levels.append([
     True
 ])
 
-# Level 9
+# Level 9, New World! Castle.
 levels.append([
     make_level([
-        "s  g y g   g   g   g    f       ",
-        "                                ",
-        "     g       g      g           ",
-        "                                ",
-        "  g   c g   g    g    g         ",
-        "                                ",
-        "      ggg yyy   ggg       g     ",
-        "                                ",
-        "                                ",
-        "bbbbbbbbb   mmm   bbbbbbbbbbbbbb"
+        "                                         brrrr          ",
+        "                                         brrrr          ",
+        "                                         b              ",
+        "                               t t t t t bt t t t t t t",
+        "                               tttttttttttttttttttttttttttttt      ",
+        "                      t t t    t                       t    t ",
+        "                      ttttt                                 t  ",
+        "                      ttttt                                 t  ",
+        "sttttttttt   ttttttttttttttttttttttttttt   tttt    ttttttttft",
+        "tttttttttt   ttttttttttttttttttttttttttt   tttt    tttttttttt"
     ]),
     "lightskyblue",
     False
@@ -224,56 +224,170 @@ levels.append([
 # Level 10
 levels.append([
     make_level([
-        "s y g  o  b  g  o  b  g   o    ",
-        "                                ",
-        "  g    g    g    g    g         ",
-        "                                ",
-        "     g      g    y  g           ",
-        "                                ",
-        "   ggg   ccc  ggg       g       ",
-        "                                ",
-        "                             f  ",
-        "ggggggg   mmm gggg     ggggggggg"
+        "                                              ",
+        "                                               ",
+        "                      brrr                      ",
+        "                      brrr                      ",
+        "                      b                         ",
+        "            ttttttttttttttttttttt                       ",
+        "            t                   t                        ",
+        "                                t                        ",
+        "sgggggggggggtttttttttttttttttttotgggggggggggggg   ggg     g      gggg   ggggf",
+        "qqqqqqqqqqqqtttttttttttttttttttttqqqqqqqqqqqqqq   qqq     q      qqqq   qqqqq"
     ]),
-    "powderblue",
+    "skyblue",
     False
 ])
 
 # Level 11
 levels.append([
     make_level([
-        "s    g    g     g  y g     f   ",
-        "                                ",
-        "     g    g     g   g           ",
-        "                                ",
-        "  g      b  c   b     g         ",
-        "                                ",
-        "        ooo   mmm  ooo          ",
-        "                                ",
-        "                                ",
-        "bbbbb            bbbbbbbbbbbbbbb"
-    ]),
-    "lightsteelblue",
+        "                                              ",
+        "                                               ",
+        "                      brrr                      ",
+        "                      brrr                      ",
+        "                      b                         ",
+        "            ttttttttttttttttttttt                       ",
+        "            t                   t                        ",
+        "                                t                        ",
+        "sgggggggggggtttttttttttttttttttftgggggggggggggg   ggg     g      gggg   ggggo",
+        "qqqqqqqqqqqqtttttttttttttttttttttqqqqqqqqqqqqqq   qqq     q      qqqq   qqqqq"    ]),
+    "skyblue",
     False
 ])
 
-# Level 12: Boss (classic arena)
+# Level 12: Boss 
 levels.append([
     make_level([
-        "             g   y    g        ",
-        "                                ",
-        "   g         g     g            ",
-        "                                ",
-        "       ggg          ggg         ",
         "                                ",
         "                                ",
         "                                ",
         "                                ",
-        "sgggoooggggooommmooogggggoooggggggooooooooooooooooooooooooooooooo"
+        "                                ",
+        "                         t t t  ",
+        "                         ttttt  ",
+        "                         ttttt  ",
+        "   sttttttttttttttttttttttttttttttttf",
+        "   tttttttttttttttttttttttttttttttttt"
     ]),
     "lightblue",
-    True   # <-- boss enabled on level 12 only
+    True   
 ])
+# Level 13: Snowy Forest 
+levels.append([
+    make_level([
+        "                                ",
+        "                                ",
+        "                                ",
+        "                               ",
+        "                          w     ",
+        "                         www    ",
+        "                        wwwww   ",
+        "                          q     ",
+        "swwwwwwww   ww   wwwwwwwwwwwwwwww    w    ww     www  wwf",
+        "qqqqqqqqq   qq   qqqqqqqqqqqqqqqq    q    qq     qqq  qqq"
+    ]),
+    "lightblue",
+    False   
+])
+#Level 14
+levels.append([
+    make_level([
+        "                                        ",
+        "                                        ",
+        "                                        ",
+        "                                        ",
+        "                              w                                                                        f    ",
+        "                             www                                                                      www  ",
+        "                            wwwww                                                                    wwwww ",
+        "                              q                                                                        q   ",
+        "swwwwwwww    www     wwwwwwwwwwwwwwww   wwww   wwwwwww   wwww   wwwwwww   wwww   wwwwwww   wwwwwwwwwwwwww  ",
+        "qqqqqqqqq    qqq     qqqqqqqqqqqqqqqq   qqqq   qqqqqqq   qqqq   qqqqqqq   qqqq   qqqqqqq   qqqqqqqqqqqqqq"
+    ]),
+    "lightblue",
+    False   
+])
+levels.append([
+    make_level([
+        "                                        ",
+        "                                        ",
+        "                                        ",
+        "                                        ",
+        "                              w                                                                        w    ",
+        "                             www                                                                      www  ",
+        "                            wwwww                                                                    wwwww ",
+        "                              q                                                                        q   ",
+        "swwwwwwww    www     wwwwwwwwwwwwwwww   wwww   wwwwwww   wwww   wwwwwww   wwww   wwwwwww   wwwwwwwwwwwwwwwwwwwwwwwwww    wwwwww   www    wwwwf",
+        "qqqqqqqqq    qqq     qqqqqqqqqqqqqqqq   qqqq   qqqqqqq   qqqq   qqqqqqq   qqqq   qqqqqqq   qqqqqqqqqqqqqqqqqqqqqqqqqq    qqqqqq   qqq    qqqqq"
+    ]),
+    "lightblue",
+    False   
+])
+levels.append([
+    make_level([
+        "                                ",
+        "                                ",
+        "                                ",
+        "                                ",
+        "                          w     ",
+        "                         www    ",
+        "                        wwwww    ",
+        "                          q          ",
+        "   swwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwf",
+        "   qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+    ]),
+    "lightblue",
+    True   
+])
+levels.append([
+    make_level([
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                         t ",
+        "                                                        ttt         ",
+        "             tt                                          t           ",
+        "             tt     o                      o             t           ",
+        "sgggggggggggggggggggggggggg   gg     g  gggggg   gggg  gggggg   gggggf",
+        "qqqqqqqqqqqqqqqqqqqqqqqqqqq   qq     q  gggggg   qqqq  qqqqqq   qqqqqq"
+    ]),
+    "black",
+    False   
+])
+levels.append([
+    make_level([
+        "                                ",
+        "                                ",
+        "                                ",
+        "                                ",
+        "                             t  ",
+        "                            ttt ",
+        "                             t  ",
+        "                             t       ",
+        "   sggggggggggggggggggggggggggggggggggggggf",
+        "   qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+    ]),
+    "black",
+    True   
+])
+levels.append([
+    make_level([
+        "                                ",
+        "     wwwww    w  w    wwwww  w   w  w  w   w   w  wwwww  w   w           w  wwwww  wwww  w  w   w  w ",
+        "       w      w  w    w   w  ww  w  w w      w    w   w  w   w           w  w      w  w  w  w w    w ",
+        "       w      wwww    wwwww  w w w  w w      w    w   w  w   w           w  w  ww  w w   w  w w      ",
+        "       w      w  w    w   w  w  ww  w  w     w    wwwww  wwwww   w       w  wwwww  w  w  w  w   w  w ",
+        "                                                                 w                                  ",
+        "                                                                                                    ",
+        "                                                                                                    ",
+        "swwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+    ]),
+    "skyblue",
+    False   
+])
+
 
 # --- GAME STATE ---
 current_level_index = 0
@@ -394,7 +508,7 @@ def spawn_player_fireball(x, y, vx):
 # --- BOSS FACTORY (classic stationary arena boss) ---
 def create_boss(player_x):
     # place boss a bit to the right of player start so it's visible without extra walking
-    bx = player_x + 480
+    bx = player_x + 398
     by = (MAP_H - 4) * TILE_SIZE  # stand above ground row
     return {'x': bx, 'y': by, 'w': TILE_SIZE*3.6, 'h': TILE_SIZE*2.6, 'hp': 10, 'fire_timer': 0.0, 'alive': True}
 
