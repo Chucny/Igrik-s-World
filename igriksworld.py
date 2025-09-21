@@ -350,7 +350,7 @@ levels.append([
         "             tt                                          t           ",
         "             tt     o                      o             t           ",
         "sgggggggggggggggggggggggggg   gg     g  gggggg   gggg  gggggg   gggggf",
-        "qqqqqqqqqqqqqqqqqqqqqqqqqqq   qq     q  gggggg   qqqq  qqqqqq   qqqqqq"
+        "qqqqqqqqqqqqqqqqqqqqqqqqqqq   qq     q  qqqqqq   qqqq  qqqqqq   qqqqqq"
     ]),
     "black",
     False   
